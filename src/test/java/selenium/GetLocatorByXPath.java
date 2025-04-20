@@ -40,10 +40,29 @@ public class GetLocatorByXPath {
             List<WebElement> subscriptions = auto.driver.findElements(By.xpath("//li[@class ='customer_tab_subscriptions' or @class = 'menu-item-subscriptions']"));
             for (WebElement item : subscriptions)
             {
-                System.out.println(item.getText());
+                System.out.println("Xpath tương đối 5 and/or: item " + item.getText());
             }
             // and
             auto.driver.findElement(By.xpath("//ul[contains(@class, 'customer-tabs') and @role = 'tablist']"));
+            // Xpath tương đối 6 Tổ tiên Ancestor
+            String titleBillingAdress =  auto.driver.findElement(By.xpath("//a[normalize-space() = 'Same as Customer Info']/ancestor::h4")).getText();
+            System.out.println("Xpath tương đối 6 Tổ tiên Ancestor: "+titleBillingAdress);
+            // Xpath tương đối 7 Con cháu Descendant
+            String labelStreet =  auto.driver.findElement(By.xpath("//div[@app-field-wrapper= 'billing_street']/descendant::label")).getText();
+            System.out.println("Xpath tương đối 7 Con cháu Descendant: "+labelStreet);
+            //Xpath tương đối 8 Following
+            auto.driver.findElement(By.xpath("//h4[contains(normalize-space() , 'Billing Address')]/following::textarea")).sendKeys("Dang Van Bi");
+            //Xpath tương đối, 8 Preceding
+            String lableCity = auto.driver.findElement(By.xpath("//div[@app-field-wrapper = 'billing_state']/preceding::label[1]")).getText();
+            System.out.println("Xpath tương đối, 8 Preceding: "+ lableCity);
+            //Xpath tương đối, 9 following-sibling
+            auto.driver.findElement(By.xpath("//label[@for = 'billing_city']/following-sibling::input")).sendKeys("Ho Chi Minh");
+            //Xpath tương đối, 9 preceding-sibling
+            String lableState = auto.driver.findElement(By.xpath("//input[@id = 'billing_state']/preceding-sibling::label")).getText();
+            System.out.println("Xpath tương đối, 9 preceding-sibling: lableState= "+ lableState);
+            //Xpath tương dối 10, parent
+            String titleBillingAdress2 = auto.driver.findElement(By.xpath("//a[contains(normalize-space() , 'Same as Customer Info') ]/parent::h4")).getText();
+            System.out.println("Xpath tương dối 10, parent:titleBillingAdress2= "+titleBillingAdress2 );
         Thread.sleep(3000);
         auto.driver.quit();
 
