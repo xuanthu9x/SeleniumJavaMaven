@@ -1,0 +1,74 @@
+package baiTapGetLocator;
+
+public class projectPage {
+    String projectMenu = "//ul[@id = 'side-menu']/li[contains(@class, 'menu-item-projects')]";
+    // New project form
+    String labelProjectName = "//label[@for = 'name']";
+    String iconRequiredProjectName = "//label[@for = 'name']/small";
+    String inputProjectName = "//input[@id = 'name']";
+    String labelCustomerId = "//label[@for= 'clientid']";
+    String iconRequiredCustomer = "//label[@for= 'clientid']/small";
+    String dropdownCustomer = "//label[@for= 'clientid']/following-sibling::div";
+    String arrowInCustomerDropdown = "//label[@for= 'clientid']/following-sibling::div/button/span";
+    String searchInDropdown = "//label[@for= 'clientid']/following-sibling::div/div/div/input";
+    String CustomerList = "//label[@for= 'clientid']/following-sibling::div/div/div[2]/ul";
+    String messageUnderSearchCustomer = "//label[@for= 'clientid']/following-sibling::div/div/div[3]";
+    String labelBillingType = "//label[@for= 'billing_type']";
+    String iconRequiredBillingType = "//label[@for= 'billing_type']/small";
+    String dropdownBillingType = "//label[@for= 'billing_type']/following-sibling::div[2]";
+    String billingTypeOptions = "//label[@for= 'billing_type']/following-sibling::div[2]/select/option";
+    String arrowInBillingTypeDropdown = "//label[@for= 'billing_type']/following-sibling::div[2]/button/span";
+    String labelStatus = "//label[@for= 'status']";
+    String dropdownStatus = "//label[@for= 'status']/following-sibling::div[2]";
+    String StatusOptions = "//label[@for= 'status']/following-sibling::div[2]/div/div/ul/li";
+    String lableRatePerHour = "//label[@for= 'project_rate_per_hour']";
+    String inputRatePerHour = "//input[@id= 'project_rate_per_hour']";
+    String labelEstHour="//label[@for= 'estimated_hours']";
+    String inputEstHour="//input[@id= 'estimated_hours']";
+    String labelMembers = "//label[@for= 'project_members[]']";
+    String dropdownMember = "//label[@for= 'project_members[]']/following-sibling::div";
+    String searchMemberInDropdown = "//label[@for= 'project_members[]']/following-sibling::div/div/div/input";
+    String memberOption = "//label[@for= 'project_members[]']/following-sibling::div/div/div[3]/ul/li";
+    String buttonSelectAllMember = "//label[@for= 'project_members[]']/following-sibling::div/div/div[2]/div/button[contains(@class, 'bs-select-all')]";
+    String buttonDeselectAllMember = "//label[@for= 'project_members[]']/following-sibling::div/div/div[2]/div/button[contains(@class, 'bs-deselect-all')]";
+    String labelStartDate = "//label[@for= 'start_date']";
+    String inputStartDate = "//input[@id= 'start_date']";
+    String iconCalendar = "//i[contains(@class,  'calendar-icon')]";
+    String buttonPrevInCalendar = "//div[@class = 'xdsoft_monthpicker']/button[@class =  'xdsoft_prev']";
+    String buttonTodayInCalendar = "//div[@class = 'xdsoft_monthpicker']/button[@class =  'xdsoft_today_button']";
+    String buttonNextInCalendar = "//div[@class = 'xdsoft_monthpicker']/button[@class =  'xdsoft_next']";
+    String dropdownMonth = "//div[contains(@class , 'xdsoft_label xdsoft_month')]";
+    String textMonth = "//div[contains(@class , 'xdsoft_label xdsoft_month')]/span";
+    String monthOptions = "//div[contains(@class , 'xdsoft_label xdsoft_month')]/div/div/div";
+    String scrollbarMonth = "//div[contains(@class , 'xdsoft_label xdsoft_month')]/div/div[2]";
+    String dropdownYear = "//div[@class = 'xdsoft_label xdsoft_year']";
+    String textYear = "//div[@class = 'xdsoft_label xdsoft_year']/span";
+    String yearOptions = "//div[@class = 'xdsoft_label xdsoft_year']/div/div/div";
+    String scrollbarYear = "//div[@class = 'xdsoft_label xdsoft_year']/div/div[2]";
+    String labelDeadline = "//label[@for = 'deadline']";
+    String inputDeadline = "//input[@id = 'deadline']";
+    String iconCalendarDeadline = "//div[@app-field-wrapper= 'deadline']/div/div/i";
+    String prevButtonDeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/button[@class = 'xdsoft_prev']";
+    String todayButtonDeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/button[@class = 'xdsoft_today_button']";
+    String nextButtonDeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/button[@class = 'xdsoft_next']";
+    String monthDropdownDeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_month']";
+    String textMonth_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_month']/span";
+    String monthOptions_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_month']/div/div/div";
+    String scroolbar_Month_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_month']/div/div[2]";
+    String yearDropdown_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_year']";
+    String textYear_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_year']/span";
+    String yearOptions_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_year']/div/div/div";
+    String scrollbarYear_DeadlineCalendar = "//span[@id ='PING_IFRAME_FORM_DETECTION']/following::div/div/div/div[@class = 'xdsoft_label xdsoft_year']/div/div[2]";
+    String labelTags = "//label[@for ='tags']";
+    String iconTag = "//label[@for ='tags']/i";
+    String tagList = "//label[@for ='tags']/following::ul/li";
+    String labelDesciption = "//p[text() = 'Description']";
+    String inputDescription = "//textarea[@id= 'description']";
+    String labelSendEmail = "//label[@for= 'send_created_email']";
+    String checkboxSendEmail = "//input[@id= 'send_created_email']";
+    String buttonSave = "//button[@type= 'submit' and normalize-space() = 'Save']";
+    String BlankProjectNameError = "//p[@id = 'name-error']";
+    String BlankCustomerError= "//p[@id = 'clientid-error']";
+}
+
+
