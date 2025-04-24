@@ -1,6 +1,4 @@
-package baiTapGetLocator;
-
-import org.openqa.selenium.WebElement;
+package baiTapWebElement_WebDriver;
 
 public class xPathCustomerPage {
     String iconHideMenu = "//div[contains(@class, 'hide-menu')]";
@@ -108,7 +106,8 @@ public class xPathCustomerPage {
     String selectCountryPopup = "//label[@for = 'country']/following-sibling::div/div";
     String searchCountryInPopup = "//label[@for = 'country']/following-sibling::div/div/div/input";
     String countryOptionList = "//label[@for = 'country']/following-sibling::div/div/div[2]/ul/li";
-
+    String buttonSaveAndCreateContact = "//button[contains(@class, 'save-and-add-contact')]";
+    String buttonOnlySave = "//button[contains(@class, 'only-save')]";
 
 
 
