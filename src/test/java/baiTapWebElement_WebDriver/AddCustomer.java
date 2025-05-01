@@ -10,7 +10,6 @@ import java.time.Duration;
 
 public class AddCustomer {
     WebDriver driver = new ChromeDriver();
-    //projectPage.xPathCustomerPage xpath1 = new projectPage.xPathCustomerPage();
 
     public void Login(String email, String password){
        driver.findElement(By.xpath("//input[@id = 'email']")).sendKeys(email);
