@@ -2,6 +2,7 @@ package baiTapGetLocator;
 
 public class projectPage {
     String projectMenu = "//ul[@id = 'side-menu']/li[contains(@class, 'menu-item-projects')]";
+    String buttonAddProject = "//a[normalize-space() = 'New Project' ]";
     // New project form
     String labelProjectName = "//label[@for = 'name']";
     String iconRequiredProjectName = "//label[@for = 'name']/small";
@@ -10,7 +11,7 @@ public class projectPage {
     String iconRequiredCustomer = "//label[@for= 'clientid']/small";
     String dropdownCustomer = "//label[@for= 'clientid']/following-sibling::div";
     String arrowInCustomerDropdown = "//label[@for= 'clientid']/following-sibling::div/button/span";
-    String searchInDropdown = "//label[@for= 'clientid']/following-sibling::div/div/div/input";
+    String searchCustomerInDropdown = "//label[@for= 'clientid']/following-sibling::div/div/div/input";
     String CustomerList = "//label[@for= 'clientid']/following-sibling::div/div/div[2]/ul";
     String messageUnderSearchCustomer = "//label[@for= 'clientid']/following-sibling::div/div/div[3]";
     String labelBillingType = "//label[@for= 'billing_type']";
@@ -69,6 +70,62 @@ public class projectPage {
     String buttonSave = "//button[@type= 'submit' and normalize-space() = 'Save']";
     String BlankProjectNameError = "//p[@id = 'name-error']";
     String BlankCustomerError= "//p[@id = 'clientid-error']";
+
+    public static class xPathCustomerPage {
+        // Locator Customer page
+        public static String menuCustomer = "//span[normalize-space()='Customers' and @class = 'menu-text' ]";
+        public static String buttonAddNewCustomer = "//a[normalize-space()='New Customer']";
+        public static String buttonImportCustomer = "///a[normalize-space()='Import Customers']";
+        public static String buttonContacts = "//a[normalize-space()='Contacts' and contains(@href,'all_contacts')]";
+        public static String headerCustomersPage = "//span[normalize-space() = 'Customers Summary']";
+
+        public static String inputSearch ="//div[@id = 'clients_filter']//input[@type = 'search']";
+        public static String iconSearch = "//div[@id = 'clients_filter']//span[contains(@class, 'fa-search')]";
+        public static String labelTotalCustomers = "//span[normalize-space() = 'Total Customers']";
+        public static String numberTotalCustomers = "//span[normalize-space() = 'Total Customers']/preceding-sibling::span";
+        public static String labelActiveCustomers = "//span[normalize-space() = 'Active Customers']";
+        public static String numberActiveCustomers = "//span[normalize-space() = 'Active Customers']/preceding-sibling::span";
+        public static String labelInactiveCustomer = "//span[normalize-space()='Inactive Customers']";
+        public static String numberInactiveCustomers = "//span[normalize-space()='Inactive Customers']/preceding-sibling::span";
+        public static String labelActiveContacts = "//span[normalize-space()='Active Contacts']";
+        public static String numberActiveContacts = "//span[normalize-space()='Active Contacts']/preceding-sibling::span";
+        public static String labelInactiveContacts = "//span[normalize-space()='Inactive Contacts']";
+        public static String numberInactiveContacts = "//span[normalize-space()='Inactive Contacts']/preceding-sibling::span";
+        public static String labelContactsLoggedInToday = "//span[normalize-space()='Contacts Logged In Today']";
+        public static String numberContractsLoggedInToday = "/span[normalize-space()='Inactive Contacts']/preceding-sibling::span";
+
+        public static String columnTitleCheckbox = "//div[contains(@class , 'mass_select_all_wrap')]/parent::th";
+        public static String columnTitleCustomerId = "//th[@id='th-number']";
+        public static String columnTitleCompany = "//th[@id='th-company']";
+        public static String columnTitlePrimaryEmanil = "//th[@id='th-primary-contact']";
+        public static String columnTitlePhone = "//th[@id='th-phone']";
+        public static String columnTitleActive = "//th[@id = 'th-active']";
+        public static String columnTitleGroups = "//th[@id = 'th-groups']";
+        public static String columnTitleDateCreated = "//th[@id = 'th-date-created']";
+
+        // Form New Customer - Customer Detail
+
+        public static String inputCompany = "//input[@id = 'company']";
+        public static String inputVatNumber = "//input[@id = 'vat']";
+        public static String inputPhoneNumber = "//input[@id = 'phonenumber']";
+        public static String inputWebsite = "//input[@id = 'website']";
+        public static String dropdownGroups = "//button[contains(@data-id, 'groups_in')]";
+        public static String inputSearchGroup = "//button[contains(@data-id, 'groups_in')]/following-sibling::div//input[@type = 'search']";
+        public static String buttonSelectAll = "//button[contains(@class , 'bs-select-all')]";
+        public static String buttonDeselectAll = "//button[contains(@class , 'bs-deselect-all')]";
+        public static String dropdownCurrency = "//button[@data-id ='default_currency']";
+        public static String inputSearchCurrency = "//button[@data-id ='default_currency']/following-sibling::div//input[@type = 'search']";
+        public static String dropdownDefaultLanguage = "//button[@data-id ='default_language']";
+        public static String inputAddress = "//textarea[@id= 'address']";
+        public static String inputCity = "//input[@id= 'city']";
+        public static String inputState = "//input[@id= 'state']";
+        public static String inputZipCode = "//input[@id= 'zip']";
+        public static String dropdownCountry = "//button[@data-id ='country']";
+        public static String inputSearchCountry = "//button[@data-id ='country']/following-sibling::div//input[@type = 'search']";
+        public static String buttonSaveAndCreateContact = "//button[normalize-space()='Save and create contact']";
+        public static String buttonOnlySave = "//button[normalize-space()='Save and create contact']/following-sibling::button[normalize-space()='Save']";
+
+    }
 }
 
 
