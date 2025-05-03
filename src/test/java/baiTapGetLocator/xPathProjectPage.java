@@ -1,6 +1,6 @@
 package baiTapGetLocator;
 
-public class projectPage {
+public class xPathProjectPage {
     public static String menuProject = "//span[normalize-space()='Projects']";
     public static String buttonAddProject = "//a[normalize-space() = 'New Project' ]";
     public static String inputSearchProject = "//div[@id = 'projects_filter']//input[@type = 'search']";

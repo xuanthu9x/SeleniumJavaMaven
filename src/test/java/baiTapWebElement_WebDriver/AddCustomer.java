@@ -1,6 +1,5 @@
 package baiTapWebElement_WebDriver;
 
-import baiTapGetLocator.projectPage;
 import baiTapGetLocator.xPathCustomerPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
