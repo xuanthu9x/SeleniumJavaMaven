@@ -51,7 +51,7 @@ public class GetLocatorCssSelector {
         driver.findElement(By.cssSelector(inputEmail)).sendKeys("admin@example.com");
         driver.findElement(By.cssSelector(inputPassword)).sendKeys("123456");
         driver.findElement(By.cssSelector(buttonLogin)).click();
-        
+
         Thread.sleep(3000);
         driver.quit();
     }
