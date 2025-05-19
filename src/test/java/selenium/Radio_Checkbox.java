@@ -5,13 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
 
-public class Radio_Checkbox_Dropdown {
+public class Radio_Checkbox {
     WebDriver driver = new ChromeDriver();
     public void handleSigleCheckbox() throws InterruptedException {
         // 1 handle sigle checkbox
@@ -127,7 +125,7 @@ public class Radio_Checkbox_Dropdown {
     }
     public static void main(String[] args) throws InterruptedException {
 
-        Radio_Checkbox_Dropdown auto = new Radio_Checkbox_Dropdown();
+        Radio_Checkbox auto = new Radio_Checkbox();
         auto.driver.manage().window().maximize();
         auto.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         //1. Handle signle checkbox
@@ -142,6 +140,5 @@ public class Radio_Checkbox_Dropdown {
         auto.HandleRadio();
         Thread.sleep(3000);
         auto.driver.quit();
-
     }
 }
